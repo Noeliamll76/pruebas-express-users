@@ -1,5 +1,11 @@
 import express from "express"
+import {router as routerUsers} from "./routes/usersRoutes"
+
+
 const app=express()
+const PORT = process.env.PORT || 3000
+
+app.use ('/users', routerUsers)
 
 app.get('/users',(req,res)=>{
     //logica de lo que quiero hacer/devolver
@@ -22,6 +28,6 @@ app.get('/users',(req,res)=>{
    })
 
 
-app.listen(3000,()=> {
-console.log("Servidor levantado en 3000")
+app.listen(PORT, ()=> {
+console.log (`Server runing ${PORT}`)
 })

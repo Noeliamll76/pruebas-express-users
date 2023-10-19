@@ -9,4 +9,13 @@ const createUsers = (req:Request, res:Response) => {
    return res.send('CREATE USERS')
 }
 
-export{getUsers, createUsers}
+const updateUsersById =(req:Request, res:Response) => {
+    //logica para actualizar usuarios
+      return res.send('UPDATE USERS by id ')
+}
+
+
+
+
+
+export{getUsers, createUsers, updateUsersById}

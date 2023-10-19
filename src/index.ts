@@ -8,11 +8,7 @@ const PORT = process.env.PORT || 3000
 app.use('/users', routerUsers)
 
 
-app.post('/users', (req, res) => {
-    //logica para crear usuarios
-    console.log('create')
-    return res.send('CREATE USERS')
-})
+
 app.put('/users/:id', (req, res) => {
     //logica para actualizar usuarios
     const usersId = req.params.id

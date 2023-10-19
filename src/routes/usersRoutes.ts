@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { getUsers } from "../controller/usersController";
+import { getUsers, createUsers } from "../controller/usersController";
 
 const router = Router ()
 
 router.get('/', getUsers)
-    
+router.post('/', createUsers) 
 
 
 

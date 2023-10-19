@@ -9,17 +9,6 @@ app.use('/users', routerUsers)
 
 
 
-app.put('/users/:id', (req, res) => {
-    //logica para actualizar usuarios
-    const usersId = req.params.id
-    return res.send('UPDATE USERS ' + usersId)
-})
-app.delete('/users/:id', (req, res) => {
-    //logica para borrar usuarios
-    const usersId = req.params.id
-    return res.send('DELETE USERS ' + usersId)
-})
-
 
 app.listen(PORT, () => {
     console.log(`Server runing ${PORT}`)

@@ -1,0 +1,79 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Pruebas users",
+    "dateExported": "2023-10-19T18:28:36.750Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "639c59ac-cae6-4a0a-bd7b-5c68cb45b639",
+            "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
+            "containerId": "",
+            "name": "localhost:3000/users",
+            "url": "localhost:3000/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-18T19:32:33.637Z",
+            "modified": "2023-10-18T19:32:33.637Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ed6c811-480f-4b53-b912-ea6482eae2bb",
+            "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
+            "containerId": "",
+            "name": "localhost:3000/users",
+            "url": "localhost:3000/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-18T19:32:40.627Z",
+            "modified": "2023-10-18T19:32:40.627Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85272361-0b76-479e-83a4-366560ac572f",
+            "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
+            "containerId": "",
+            "name": "localhost:3000/users/20",
+            "url": "localhost:3000/users/20",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-18T19:32:52.342Z",
+            "modified": "2023-10-18T19:32:52.342Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "62058965-3266-4508-bee0-ce7e17db993a",
+            "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
+            "containerId": "",
+            "name": "localhost:3000/users/20",
+            "url": "localhost:3000/users/20",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-10-18T19:32:59.137Z",
+            "modified": "2023-10-18T19:32:59.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1dbae0b5-fb9c-4db3-99f4-319c99a28118",
+            "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
+            "containerId": "",
+            "name": "localhost:3000/users/20",
+            "url": "localhost:3000/users/20",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-19T18:27:16.799Z",
+            "modified": "2023-10-19T18:27:16.799Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

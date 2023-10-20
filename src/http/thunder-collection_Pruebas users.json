@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Pruebas users",
-    "dateExported": "2023-10-20T20:25:20.764Z",
+    "dateExported": "2023-10-20T21:09:08.812Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -28,12 +28,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-10-18T19:32:40.627Z",
-            "modified": "2023-10-20T19:32:03.063Z",
+            "modified": "2023-10-20T20:48:00.823Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n\"name\":\"paco\",\n\"email\":\"paco@noelia.es\",\n\"password\":\"12345\"\n\n}",
+                "raw": "{\n\"name\":\"irene\",\n\"email\":\"irene@noelia.es\",\n\"password\":\"12345\"\n\n}",
                 "form": []
             },
             "tests": []
@@ -43,11 +43,11 @@
             "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
             "containerId": "",
             "name": "localhost:3000/users/20",
-            "url": "localhost:3000/users/3",
+            "url": "localhost:3000/users/10",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2023-10-18T19:32:52.342Z",
-            "modified": "2023-10-20T20:24:58.740Z",
+            "modified": "2023-10-20T20:57:55.917Z",
             "headers": [],
             "params": [],
             "body": {
@@ -62,11 +62,11 @@
             "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
             "containerId": "",
             "name": "localhost:3000/users/20",
-            "url": "localhost:3000/users/2",
+            "url": "localhost:3000/users/1",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2023-10-18T19:32:59.137Z",
-            "modified": "2023-10-20T20:21:18.971Z",
+            "modified": "2023-10-20T20:47:25.753Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -76,18 +76,13 @@
             "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
             "containerId": "",
             "name": "localhost:3000/users/20",
-            "url": "localhost:3000/users/20",
+            "url": "localhost:3000/users/5",
             "method": "GET",
             "sortNum": 60000,
             "created": "2023-10-19T18:27:16.799Z",
-            "modified": "2023-10-19T18:34:26.133Z",
+            "modified": "2023-10-20T21:08:48.039Z",
             "headers": [],
             "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"nombre\":\"Benito\" \n  \"apellidos\": \"El de los palotes\"\n}",
-                "form": []
-            },
             "tests": []
         }
     ]

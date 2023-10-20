@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Pruebas users",
-    "dateExported": "2023-10-19T18:28:36.750Z",
+    "dateExported": "2023-10-19T18:39:33.526Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -28,9 +28,14 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-10-18T19:32:40.627Z",
-            "modified": "2023-10-18T19:32:40.627Z",
+            "modified": "2023-10-19T18:39:03.792Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nombre\":\"Noelia\",\n\"apellidos\":\"Marcos Lleonart\"\n\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -70,9 +75,14 @@
             "method": "GET",
             "sortNum": 60000,
             "created": "2023-10-19T18:27:16.799Z",
-            "modified": "2023-10-19T18:27:16.799Z",
+            "modified": "2023-10-19T18:34:26.133Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Benito\" \n  \"apellidos\": \"El de los palotes\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]

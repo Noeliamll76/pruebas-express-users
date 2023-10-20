@@ -5,6 +5,7 @@ const getUsers = (req: Request, res: Response) => {
     return res.send('Get Users')
 }
 const createUsers = (req: Request, res: Response) => {
+    console.log(req.body.nombre)
     //logica para crear usuarios
     return res.send('CREATE USERS')
 }

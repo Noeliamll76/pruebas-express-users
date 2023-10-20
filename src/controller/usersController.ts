@@ -10,6 +10,7 @@ const getUsers = async (req: Request, res: Response) => {
 }
 
 const createUsers = async (req: Request, res: Response) => {
+    try {
     const newUser = await Users.create(
         {
             name: req.body.name,
@@ -18,17 +19,43 @@ const createUsers = async (req: Request, res: Response) => {
         }
     ).save()
     return res.send(newUser)
+    } catch (error){return res.send(error)}
 }
 
 
-const updateUsersById = (req: Request, res: Response) => {
-    //logica para actualizar usuarios
-    return res.send('UPDATE USERS by id ')
-}
+const updateUsersById = async (req: Request, res: Response) => {
+    try {
+        const userIdToUpdate = req.params.id
+        const userUpdate = await Users.findBy(
+            {
+                id: parseInt(userIdToUpdate)
+            })
+        if (userUpdate) { 
+            await Users.update(userIdToUpdate, req.body)
+            return res.send("Se ha modificado correctamente") 
+        }
+        return res.send("No se ha encontrado el usuario a modificar")
+    } catch (error) {
+        return res.send(error) 
+    }
+    }
 
-const deleteUsersById = (req: Request, res: Response) => {
-    //logica para borrar usuarios
-    return res.send('DELETE USERS by ID')
+
+const deleteUsersById = async (req: Request, res: Response) => {
+    try {
+        const userIdToDelete = req.params.id
+        const userDeleted = await Users.delete(
+            {
+                id: parseInt(userIdToDelete)
+            }
+        )
+        if (userDeleted.affected) {
+            return res.send("Se ha eliminado correctamente el id " + userIdToDelete)
+        }
+        return res.send("No se ha podido eliminar el id " + userIdToDelete)
+    } catch (error) {
+        return res.send(error)
+    }
 }
 
 const getUsersById = (req: Request, res: Response) => {

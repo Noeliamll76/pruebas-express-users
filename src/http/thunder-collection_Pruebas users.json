@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Pruebas users",
-    "dateExported": "2023-10-20T18:03:33.636Z",
+    "dateExported": "2023-10-20T20:25:20.764Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -28,12 +28,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-10-18T19:32:40.627Z",
-            "modified": "2023-10-20T18:02:21.670Z",
+            "modified": "2023-10-20T19:32:03.063Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n\"name\":\"bienve\",\n\"email\":\"bienve@noelia.es\",\n\"password\":\"12345\"\n\n}",
+                "raw": "{\n\"name\":\"paco\",\n\"email\":\"paco@noelia.es\",\n\"password\":\"12345\"\n\n}",
                 "form": []
             },
             "tests": []
@@ -43,13 +43,18 @@
             "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
             "containerId": "",
             "name": "localhost:3000/users/20",
-            "url": "localhost:3000/users/20",
+            "url": "localhost:3000/users/3",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2023-10-18T19:32:52.342Z",
-            "modified": "2023-10-18T19:32:52.342Z",
+            "modified": "2023-10-20T20:24:58.740Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"noelius\",\n \"email\":\"adios@adios.es\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -57,11 +62,11 @@
             "colId": "8cf4721f-00ff-4168-89f1-df15de8c804e",
             "containerId": "",
             "name": "localhost:3000/users/20",
-            "url": "localhost:3000/users/20",
+            "url": "localhost:3000/users/2",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2023-10-18T19:32:59.137Z",
-            "modified": "2023-10-18T19:32:59.137Z",
+            "modified": "2023-10-20T20:21:18.971Z",
             "headers": [],
             "params": [],
             "tests": []

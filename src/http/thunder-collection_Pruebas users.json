@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Pruebas users",
-    "dateExported": "2023-10-19T18:39:33.526Z",
+    "dateExported": "2023-10-20T18:03:33.636Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -28,12 +28,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-10-18T19:32:40.627Z",
-            "modified": "2023-10-19T18:39:03.792Z",
+            "modified": "2023-10-20T18:02:21.670Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n\"nombre\":\"Noelia\",\n\"apellidos\":\"Marcos Lleonart\"\n\n}",
+                "raw": "{\n\"name\":\"bienve\",\n\"email\":\"bienve@noelia.es\",\n\"password\":\"12345\"\n\n}",
                 "form": []
             },
             "tests": []

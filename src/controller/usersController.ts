@@ -1,14 +1,25 @@
 import { Request, Response } from "express";
+import { Users } from "../models/Users";
 
-const getUsers = (req: Request, res: Response) => {
-    //logica de lo que quiero hacer/devolver
-    return res.send('Get Users')
+const getUsers = async (req: Request, res: Response) => {
+    try {
+        //Busca de la clase Users y se lo pasas a la variable users y me lo muestras
+        const users = await Users.find()
+        return res.send(users)
+    } catch (error) { return res.send(error) }
 }
-const createUsers = (req: Request, res: Response) => {
-    console.log(req.body.nombre)
-    //logica para crear usuarios
-    return res.send('CREATE USERS')
+
+const createUsers = async (req: Request, res: Response) => {
+    const newUser = await Users.create(
+        {
+            name: req.body.name,
+            email: req.body.email,
+            password: req.body.password
+        }
+    ).save()
+    return res.send(newUser)
 }
+
 
 const updateUsersById = (req: Request, res: Response) => {
     //logica para actualizar usuarios

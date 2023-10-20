@@ -11,6 +11,9 @@ app.use(express.json())
 app.use('/users', routerUsers)
 AppDataSource.initialize()
 .then (()=>{
+    app.listen(PORT, () => {
+        console.log(`Server runing ${PORT}`)
+    })
     console.log ('Database connected')
 })
 .catch (error=>{
@@ -18,6 +21,3 @@ AppDataSource.initialize()
 })
 
 
-app.listen(PORT, () => {
-    console.log(`Server runing ${PORT}`)
-})

@@ -28,11 +28,11 @@ const createUsers = async (req: Request, res: Response) => {
 const updateUsersById = async (req: Request, res: Response) => {
     try {
         const userIdToUpdate = req.params.id
-        const userUpdate = await Users.findBy(
+        const userUpdate = await Users.findOneBy(
             {
                 id: parseInt(userIdToUpdate)
             })
-        if (userUpdate) {
+        if (userUpdate!) {
             await Users.update(userIdToUpdate, req.body)
             return res.send("Se ha modificado correctamente")
         }
@@ -63,12 +63,12 @@ const deleteUsersById = async (req: Request, res: Response) => {
 const getUsersById = async (req: Request, res: Response) => {
     try {
         const userIdToGet = req.params.id
-        const userGet = await Users.findBy(
+        const userGet = await Users.findOneBy(
             {
                 id: parseInt(userIdToGet)
             }
         )
-        if (userGet) {
+        if (userGet!) {
             return res.send(userGet)
         }
         else {
